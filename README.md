@@ -1,6 +1,14 @@
-# Project
+
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+![npm](https://img.shields.io/npm/v/ng2-charts.svg)
+
+# Project - ProjectManagement
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+
+## Overview
+
+This Angular application is designed to showcase various features and functionalities using `ng2-charts` for data visualization, Angular Material for UI components, and Angular routing for navigation. The application consists of multiple components, each serving a specific purpose in the overall architecture.
 
 ## Development server
 
@@ -9,19 +17,58 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+I Have developed the below Compnents that are required to develop the project
+- **HomeComponent**: The landing page of the application.
+- **DashboardComponent**: Displays an overview of various metrics and displaying of all the filtered and All the project.
+- **DialogComponent**: A reusable dialog for displaying messages or forms.
+- **ChartComponent**: Renders charts using `ng2-charts` for creating of Pie Chart of "Inprocess","Pending" and "Completed" project status.
+- **PageNotFoundComponent**: Displays a 404 error message for unmatched routes.
+- **HeaderComponent**: The top navigation bar for the application.
+- **FooterComponent**: The bottom section of the application for additional information.
+  
+ ## Services
+
+- **ProfileService**: A service that provides data related to different projects. It includes attributes such as `name``image`, `description`, `status`, `deadline`, and `teamMembers`. 
 
 ## Build
 
+- **ng2-charts**: Integrates dynamic and responsive charts for data representation.
+- **Angular Material**: Utilizes Material Design components for a modern user interface.
+- **Angular Routing**: Implements routing for seamless navigation between different views.
+
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm install` 
+Run`npm install ng2-charts chart.js --save to import the module for the development of chart.
+and run  `ng add @angular/material` to add angular material 
+Also add `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">`
+into your index.html file for font Awsome 
 
-## Running unit tests
+## Usage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+After setting up the application, navigate to the Home page to start exploring the dashboard. Here you can:
+- View project statuses in the ChartComponent.
+- Access detailed project information through the DashboardComponent.
+- Interact with reusable dialogs for project forms.
+## License
 
-## Running end-to-end tests
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Screenshots
+
+![Dashboard Screenshot]()
+
+
+## Installation
+
+To get started with this application, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+
