@@ -62,13 +62,60 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ![Dashboard Screenshot]()
 
+## Tech Stack
+- Angular 16.2.9
+- ng2-charts
+- Angular Material
+- TypeScript
+
+
 
 ## Installation
 
 To get started with this application, follow these steps:
 
-1. **Clone the repository**:
-   ```bash
+ 
+  
+
+**Clone the repository**:
+ ```bash
    git clone <repository-url>
    cd <repository-directory>
+
+**Install Dependencies:**
+Ensure you have Node.js and npm installed.
+Then run the following command to install the necessary packages:
+npm install
+
+
+Install Required Libraries:
+Install ng2-charts and chart.js for chart functionalities,
+and add Angular Material for UI components:
+
+```bash
+npm install ng2-charts chart.js --save
+ng add @angular/material
+
+**Add Font Awesome:** To utilize Font Awesome icons, include the following line in your index.html file:
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+Start the Development Server: After all dependencies are installed, start the Angular development server:
+
+```bash
+ng serve
+
+Navigate to http://localhost:4200/ in your browser. The application will automatically reload if you change any of the source files.
+
+**Build the Application**: To create a production build of the application, run:
+
+```bash
+ng build
+The build artifacts will be stored in the dist/ directory.
+
+Now you're all set to start using the ProjectManagement application!
+
+
+
+Feel free to adjust any of the wording to match your style, and let me know if there's anything else you want to add or modi
 
