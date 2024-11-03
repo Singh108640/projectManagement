@@ -1,0 +1,29 @@
+<h1 class="board">{{OnBardName}}</h1>
+<div class="dashboard-Display">
+ 
+    <mat-card class="card" appearance="outlined" *ngFor="let x of ProjectList" >
+        <mat-card-header>
+         
+          <mat-card-title>{{ x.name }}</mat-card-title>
+   
+        </mat-card-header>
+        <img mat-card-image src='../../../assets/{{x.image}}'    matTooltip="" alt="photo of an {{x.name}}">
+        <mat-card-content>
+          <h4>Team Members:</h4><p>{{x.teamMembers}}</p>
+          
+         
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="getProjectInfo(x)" matTooltip="Click to Get Details">Project Details</button>
+      </mat-card-actions>
+     
+    </mat-card>
+  <div class="gray-box">
+        <div id="mySidenav" class="sidenav">
+          <a id="topmost" style="  color:  black;" (click)="getAllProjects()" routerLinkActive="router-link-active"  >All Projects</a>
+          <a id="trd" style="  color:  black;"  (click)="CompletedProject()" routerLinkActive="router-link-active"  >Completed Projects</a>
+          <a id="top" style="  color:  black;" (click)="InprogresProject()"   >InProgress Project</a>
+          <a id="bottom" style="  color:  black;" (click)="PendingProject()" routerLinkActive="router-link-active"  >Pending Projects</a>
+        </div> 
+         </div>
+</div>

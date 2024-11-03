@@ -1,0 +1,41 @@
+
+  <div class="container">
+    <mat-card class="chart-container">
+   
+
+      <canvas id="pieChart"></canvas> 
+      <h4>In Pie chart</h4>
+    
+    </mat-card>
+    <div class="statistics">
+      <div class="stat">
+        <p>Total provided Projects</p>
+        <h2 style="color: rgb(138, 105, 105);">{{totalCount}}</h2>
+      </div>
+      <div class="stat">
+        <p>Completed Projects</p>
+        <h2 style="color: green;">{{completeCount}}</h2>
+      </div>
+      <div class="stat">
+        <p>In Progress Projects</p>
+        <h2 style="color: yellow;">{{inProcessCount}}</h2>
+      </div>
+      <div class="stat">
+        <p >  Pending <br>  Projects</p>
+        <h2 style="color: red;">{{pendingCount}}</h2>
+      </div>
+    </div>
+  </div>
+  
+
+  
+   <!-- <div style="display: block; width: 80%; margin: auto;">
+    <canvas baseChart
+            [datasets]="lineChartData"
+            [labels]="lineChartLabels"
+            [options]="lineChartOptions"
+            [legend]="lineChartLegend"
+            [chartType]="lineChartType">
+    </canvas>
+  </div> -->
+  

@@ -1,0 +1,52 @@
+.dialog-container{
+    background-color: #333; 
+
+}
+.dialog-container h1{
+    color:cyan;
+    text-align:center;
+    font-weight:bolder;
+}
+.dialog-container .container1{
+    display: flex; 
+    margin-left:10px;
+}
+img{
+    object-fit: cover;
+    width: 300px;
+ height: 150px; 
+ object-fit: cover;
+ border-radius: 20px;
+ margin-left: 50px;
+ box-shadow: 0 2px 4px rgba(78, 92, 214, 0.4);
+ cursor: pointer;
+
+}
+.dialog-container .container2{
+    margin-left:20px;
+}
+.container2 span{
+    color: white;
+}
+ .container2 span strong{
+    color:#B7410E;
+}
+@media (max-width: 672px) {
+    img{
+        object-fit: cover;
+        width: 200px;
+     height: 77px; 
+     object-fit: cover;
+     border-radius: 10px;
+     margin-left: 20px;
+     box-shadow: 0 2px 4px rgba(78, 92, 214, 0.4);
+     cursor: pointer;
+    
+    }
+    .container1{
+        flex-direction: column;
+        padding: 10px;
+        margin-left: 10px;
+    }
+
+}

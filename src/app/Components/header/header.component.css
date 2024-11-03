@@ -1,0 +1,129 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+  
+  }
+  
+  .header-logo img {
+    height: 40px;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .popcorn { 
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+   
+  
+  }
+
+  .header-nav {
+    flex-grow: 1;
+    margin: 0 20px;
+  }
+  
+  .header-nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header-nav-item {
+    margin-right: 20px;
+   
+  }
+.header-nav-item button{
+ color: white;
+}
+  
+  .header-search {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .header-search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 4px 8px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .header-search button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 8px;
+    margin-left: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .header-search button:hover {
+    background-color: #0056b3;
+  }
+  
+  .header-search button mat-icon {
+    vertical-align: middle;
+  }
+  
+  
+  
+  @media (max-width: 414px) {
+    
+    .header {
+      flex-direction: column;
+      padding: 10px;
+      margin-left: 10px;
+      
+    }
+  
+    .header-nav {
+      margin: 10px 0;
+    }
+  
+    .header-nav-list {
+      flex-direction: column;
+    }
+  
+    .header-nav-item {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .header-search {
+      margin-top: 10px;
+      border-radius: 50px;
+    }
+  }
+  
+  @media (min-width: 415px) and (max-width: 769px) {
+    .header {
+        width: 100%;
+        padding: 30pxpx;
+        margin-left: 20px;
+      }
+  nav{
+        width: fit-content;
+      }
+    
+    .header-nav-list {
+      flex-wrap: wrap;
+    }
+  
+    .header-nav-item {
+      margin-right: 10px;
+    }
+  }

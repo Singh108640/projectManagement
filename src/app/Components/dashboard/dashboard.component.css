@@ -1,0 +1,162 @@
+.card {
+    max-width: 400px;
+  }
+  .board{
+    text-align: center;
+
+  }
+
+ 
+
+  .dashboard-Display {
+     display: grid;
+     
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 30px;
+     margin: 0px 20px;
+     margin-top: 10px;
+   }
+   mat-card-header{
+    text-align: center;
+   }
+   mat-card{
+    box-shadow: 0 0 16px rgba(120, 70, 70, 0.4);;
+   }
+mat-card img{
+    width: 300px;
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 20px;
+    margin-left: 50px;
+    box-shadow: 0 2px 4px rgba(78, 92, 214, 0.4);
+    cursor: pointer;
+}
+mat-card img:hover{
+   
+    transition: 0.3ms ease-in-out;
+    transform: scale(1.1);
+}
+
+
+  
+@media (max-width: 414px) {
+    .card {
+      max-width: 100%; 
+      padding: 10px; 
+    }
+    .dashboard-Display {
+        display: grid;
+        
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+        margin: 0px 5px;
+      }
+      mat-card img{
+        width: 200px;
+        height: 125px; 
+        object-fit: cover;
+        border-radius: 10px;
+        margin-left: 20px;
+        box-shadow: 0 2px 4px rgba(78, 92, 214, 0.4);
+    }
+  }
+  
+ 
+  @media (min-width: 415px) and (max-width: 769px) {
+    .card {
+      max-width: 300px; 
+      padding: 15px; 
+    }
+    .dashboard-Display {
+        display: grid;
+        
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+        margin: 0px 5px;
+      }
+      mat-card img{
+        width: 250px;
+        height: 140px; 
+        object-fit: cover;
+        border-radius: 15px;
+        margin-left: 20px;
+        box-shadow: 0 2px 4px rgba(78, 92, 214, 0.4);
+    }
+  
+  }
+  #mySidenav a {
+    position: fixed;
+    margin-top: 100px;
+    right: -60px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 210px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  } 
+  
+  #mySidenav a:hover {
+   right: 0;
+   cursor: pointer;
+  }
+  
+  #fav {
+    top: 20px;
+    background-color:#f44336 ;
+  }
+  
+  #recm{
+    top: 80px;
+    background-color:#767442 ;
+    font-size: 10px;
+  }
+  #topmost{
+    top:80px;
+    background-color: #f44336;
+  }
+  #trd {
+    top: 140px;
+  
+    background-color: rgb(58, 115, 148);
+  }
+  
+  #top {
+    top: 200px;
+  
+    background-color:#b6b365 ;
+  }
+  #bottom {
+    top: 260px;
+  
+    background-color:lightseagreen ;
+  }
+  mat-card-actions button{
+    box-shadow: 0px 0px 16px rgba(120, 70, 70, 0.4);
+    margin-left: 60%;
+    
+    
+  }
+  mat-card-actions button:hover{
+    background-color: #333; 
+    color: white;
+    transform: scale(1.05); 
+    transition: all 0.3s ease; 
+  }
+  h1{
+    font-size: 36px; 
+    font-weight: 700; 
+    color: #333; 
+    text-align: center; 
+    margin: 20px 0; 
+    padding: 10px; 
+  
+    
+}
+
+h1:hover {
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.05); 
+    transition: all 0.3s ease; 
+}

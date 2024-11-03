@@ -1,0 +1,22 @@
+
+   <header class="header">
+    <nav class="header-nav">
+      <div class="header-nav-list">
+        <button class="header-nav-item">
+          <img class="popcorn" src="../../../assets/Headericon1.png" alt="img" routerLink="" routerLinkActive="Active" title="Click to Go Home"><br>
+         
+      </button>
+    
+   
+    <button class="header-nav-item" mat-button style="color: azure;" [routerLink]="['/home']" routerLinkActive="router-link-active" >
+      <mat-icon>home</mat-icon><span>Home</span>
+      </button>
+      <button class="header-nav-item" mat-button style="color: azure;"[routerLink]="['/dashboard']" routerLinkActive="router-link-active"  >
+        <mat-icon>dashboard</mat-icon> <span>DashBoard</span>
+        </button>
+        <button class="header-nav-item" mat-button style="color: azure;"[routerLink]="['/chart']" routerLinkActive="router-link-active"  >
+          <mat-icon>show_chart</mat-icon> <span>Chart</span>
+          </button>
+      </div>
+</nav>
+  </header>
