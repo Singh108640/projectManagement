@@ -40,8 +40,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 Run `npm install` 
 Run`npm install ng2-charts chart.js --save to import the module for the development of chart.
 and run  `ng add @angular/material` to add angular material 
-Also add `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">`
+add `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">`
 into your index.html file for font Awsome 
+Add `<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>` into your Index.html
+because in my System ChartsModule is installed but not Supportting, So I Have used google charts this this script need to be present at index.html
 
 ## Usage
 
@@ -99,6 +101,7 @@ ng add @angular/material
 **Add Font Awesome:** To utilize Font Awesome icons, include the following line in your index.html file:
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+Add `<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>` into your Index.html
 
 Start the Development Server: After all dependencies are installed, start the Angular development server:
 
