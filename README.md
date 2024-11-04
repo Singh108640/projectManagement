@@ -21,7 +21,7 @@ I Have developed the below Compnents that are required to develop the project
 - **HomeComponent**: The landing page of the application.
 - **DashboardComponent**: Displays an overview of various metrics and displaying of all the filtered and All the project.
 - **DialogComponent**: A reusable dialog for displaying messages or forms.
-- **ChartComponent**: Renders charts using `ng2-charts` for creating of Pie Chart of "Inprocess","Pending" and "Completed" project status.
+- **ChartComponent**: Renders charts using `ng2-charts` for creating of Pie Chart and Line Chart of "Inprocess","Pending" and "Completed" project status.
 - **PageNotFoundComponent**: Displays a 404 error message for unmatched routes.
 - **HeaderComponent**: The top navigation bar for the application.
 - **FooterComponent**: The bottom section of the application for additional information.
