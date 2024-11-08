@@ -48,3 +48,26 @@ footer{
     display: flex;
     
   }
+  
+  @media (max-width: 414px) {
+    
+ 
+  .footer-copyright  {width: 100%;}
+  }
+  
+  @media (min-width: 415px) and (max-width: 769px) {
+ 
+      .footer-copyright{
+        width:100%
+      }
+    
+
+  
+
+  }
+  @media (min-width:770px) and (max-width:1024px) {
+  
+    .footer-copyright{
+      width: 100%;
+    }
+  }

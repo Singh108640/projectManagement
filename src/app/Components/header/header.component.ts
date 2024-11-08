@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { ProfileServiceService } from 'src/app/Service/profile-service.service';
 
 @Component({
   selector: 'app-header',
@@ -8,19 +6,8 @@ import { ProfileServiceService } from 'src/app/Service/profile-service.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  constructor(private profileService:ProfileServiceService , private route:Router){
+  constructor(){
 
   }
-  SearchProject(){
-
-  }
-  getAllProjects(){
-      this.route.navigateByUrl("/home");
-  }
-  Movetodashboard(){
-    this.route.navigateByUrl("/dashboard")
-  }
-  MovetoChart(){
-    this.route.navigateByUrl("/chart")
-  }
+  
 }

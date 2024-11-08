@@ -3,6 +3,7 @@ import { Chart, registerables } from 'chart.js';
 import { ProfileServiceService } from 'src/app/Service/profile-service.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Project } from 'src/app/Profile';
+import { style } from '@angular/animations';
 declare var google: any;
 
 @Component({
@@ -103,57 +104,55 @@ this.AllProjectList=res;
 
 loardChart():void{
   google.charts.load('current', { packages: ['corechart', 'line'] });
-  google.charts.setOnLoadCallback(() => this.drawChart());
+  google.charts.setOnLoadCallback(() =>{
+    try{
+      this.drawChart()
+    }
+    catch(error:any){
+      this.snackBr.open('Error while drawing the chart:', error.message ,{duration:5000})
+    }
+  }
+    );
 }
+
 
 drawChart(): void {
   const statusCount = {
-    Completed: 0,
-    Pending: 0,
-    'In Progress': 0
+    Completed: this.completeCount,
+    Pending:this.pendingCount,
+    Progress: this.inProcessCount
   };
 
-  
-  this.AllProjectList.forEach(project => {
-    if (project.status in statusCount) {
-      statusCount[project.status]++;
-    }
-  })
   const data = google.visualization.arrayToDataTable([
     ['Status', 'Number of Projects'],
     ['Completed', statusCount.Completed],
     ['Pending', statusCount.Pending],
-    ['In Progress', statusCount['In Progress']]
+    ['In Progress', statusCount.Progress]
   ]);
 
+  
   const options = {
     title: 'Number of Projects by Status',
-    curveType: 'function',
-    legend: { position: 'bottom' },
-    colors: ['green', 'red', 'yellow'],
+     curveType: 'none',  
+    legend: { position: 'none' },
     hAxis: {
       title: 'Status',
-      ticks: [
-        { v: 'Completed', f: 'Completed' },
-        { v: 'Pending', f: 'Pending' },
-        { v: 'In Progress', f: 'In Progress' }
-      ]
+      minValue: 0,
     },
     vAxis: {
       title: 'Number of Projects',
-      minValue: 0
-    },
-    series: {
-      0: { pointShape: { type: 'square' } }, 
-      1: { pointShape: { type: 'square' } },
-      2: { pointShape: { type: 'square' } }  
+      minValue: 0,
+     
     }
   };
-
   const chart = new google.visualization.LineChart(document.getElementById('chart_div'));
   chart.draw(data, options);
-}
 
+
+
+
+
+}
 
 
 }

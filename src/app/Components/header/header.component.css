@@ -112,7 +112,7 @@
   @media (min-width: 415px) and (max-width: 769px) {
     .header {
         width: 100%;
-        padding: 30pxpx;
+        padding: 30px;
         margin-left: 20px;
       }
   nav{
@@ -125,5 +125,15 @@
   
     .header-nav-item {
       margin-right: 10px;
+    }
+  }
+  @media (min-width:770px) and (max-width:1024px) {
+    .header {
+      width: 100%;
+      padding: 30px;
+      margin-left: 10px;
+    }
+    nav{
+      width: fit-content;
     }
   }

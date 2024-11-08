@@ -4,22 +4,22 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 @Component({
   selector: 'app-dailog',
   template: `<div class="dialog-container">
-  <h1  mat-dialog-title>{{ x.name }}</h1>
+  <h1  mat-dialog-title>{{ value.name }}</h1>
  <div class="container1">
 
   
-   <img src="../../../assets/{{x.image}}" alt="{{x.name}} image">
+   <img src="../../../assets/{{value.image}}" alt="{{value.name}} image">
  
   <div class="container2">
      
-      <span ><strong>Project ID:</strong> {{x.id}}</span><br>
+      <span ><strong>Project ID:</strong> {{value.id}}</span><br>
       
-       <span ><strong >Project Name:</strong> {{x.name}}</span><br>
+       <span ><strong >Project Name:</strong> {{value.name}}</span><br>
        
-       <span><strong>Status:</strong> {{x.status}}</span><br>
-       <span ><strong>Deadline:</strong> {{x.deadline}}</span><br>
-       <span ><strong >Team Members:</strong>{{x.teamMembers}}</span><br>
-       <span ><strong>Discription:</strong> {{x.description}}</span>
+       <span><strong>Status:</strong> {{value.status}}</span><br>
+       <span ><strong>Deadline:</strong> {{value.deadline}}</span><br>
+       <span ><strong >Team Members:</strong>{{value.teamMembers}}</span><br>
+       <span ><strong>Discription:</strong> {{value.description}}</span>
      </div>
   
  </div>
@@ -31,7 +31,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./dailog.component.css']
 })
 export class DailogComponent {
-constructor(@Inject(MAT_DIALOG_DATA) public x: any){
+constructor(@Inject(MAT_DIALOG_DATA) public value: any){
 
 
 }
